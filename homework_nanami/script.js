@@ -82,6 +82,7 @@ parent.appendChild(newlink);
 // 10 dltbtnクリック時の処理実行
 dltbtn.addEventListener("click", function () {
     dltbtn.parentElement.remove()
+    newlink.remove()  
 })
 
 }
