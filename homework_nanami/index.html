@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/3a8222f7d7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="goalspace">What's Your Goal?</h1>
+        <input type="text" id="inputgoal" placeholder="ここにあなたの目標を設定">
+
+        <button type="button" id="inputBtn" value="Add">
+            <i class="fa-solid fa-check"></i>
+        </button>
+    </header>
+    <div class="content-wrapper">
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+                <!-- <button type="button" id="linkbtn">more</button> -->
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="mainbox">
+                <ul class="goallist">
+                </ul>
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="box">
+                <input type="text" id="textitem" placeholder="目標のために必要なこと">
+                <button  type="button" id="btn" value="Add"><i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+            <div class="box">
+                <input type="text" name="item" placeholder="ここに目標を設定">
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

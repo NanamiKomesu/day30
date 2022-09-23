@@ -1,0 +1,95 @@
+body{
+width: 650px;
+}
+header {
+    width: auto;
+    text-align: center;
+}
+.goalspace{
+border-bottom: 3px solid black;
+}
+#inputgoal {
+    width: auto;
+    height: 40px;
+    border-radius: 3px;
+}
+#inputBtn{
+cursor: pointer;
+background-color: #48d1cc;
+border-radius: 3px;
+}
+#textitem{
+margin-top: 20%;
+border-radius: 3px;
+}
+button{
+height: 30px;
+width: 40px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.content-wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wrapper {
+    margin-top: 50px;
+    background-image: url(./img_shoheiotani.jpg);
+    text-align: center;
+    display: grid;
+    gap: 5px;
+    width: 700px;
+    height: 700px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 80px 30px;
+    border: black solid 2px;
+
+}
+.mainbox{
+background-color: mediumturquoise;
+opacity: 0.8;
+border-radius: 20%;
+}
+.box {
+    background-color: azure;
+    opacity: 0.8;
+    border-radius: 20%;
+}
+li.textlist{
+    text-align: center;
+list-style: none;
+display: flex;
+justify-content: space-around;
+margin-top: 40%;
+}
+.delete{
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 15%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+p{
+display: flex;
+justify-content: space-around;
+}
+.dlt{
+/* border: 1px solid black;
+border-radius: 15%; */
+width: 10%;
+cursor: pointer;
+/* background-color: mediumturquoise; */
+}
+#btn{
+    background-color: floralwhite;
+}
+.dltButton{
+cursor: pointer;
+}
+
