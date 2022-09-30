@@ -1,13 +1,3 @@
-// ➀配列をつくる
-// let listData = ["shopping"];
-// console.log(listData);
-
-// // ➁コンソールに配列の中身を出す
-// for (const lD of listData) {
-//     console.log(lD);
-
-// }
-
 // 1 #inputボタン要素取得
 let inputbtn = document.querySelector("#inputBtn");
 // 2 #inputgoalボタンにクリックイベントを追加
@@ -46,63 +36,65 @@ inputbtn.addEventListener("click", function () {
     }
 })
 
+// jQuery
+$(".btn").on("click", function () {
+$(".textitem").value();
+})
 
+// 1 #btn要素取得
+let boxbtn = document.querySelector("#btn");
+// 2 boxbtnにクリック要素を追加
+boxbtn.addEventListener("click", function () {
+    // 3 #textitem要素取得
+    let textitem = document.querySelector("#textitem");
+    let task = textitem.value;
+    console.log(task);
+    // 4 #textitemに入力時の処理
+    if (task !== "") {
+        // // ➂.⑤引数無しの関数を一回実施、その後引数あり関数に変更
+        createTask(task);
 
-// ➂関数を作る（関数にしただけで問題なく動くか確認）←　どの番号からどの番号までが同じ処理になるの？4番から15番まで
-// function createTask(item) {
+    }
 
-    // 1 #btn要素取得
-    let boxbtn = document.querySelector("#btn");
-    // 2 boxbtnにクリック要素を追加
-    boxbtn.addEventListener("click", function () {
-        // 3 #textitem要素取得
-        let textitem = document.querySelector("#textitem");
-        let txt = textitem.value;
-        // 4 #textitemに入力時の処理
-        if (textitem !== "") {
-            // ➂.⑤引数無しの関数を一回実施、その後引数あり関数に変更
-            // createTask(text);
-            // 5 .boxに<p>を追加
-            let p = document.createElement("p")
-            // 6 textContentに代入
-            p.textContent = textitem.value;
-            // 7 親要素boxを取得後、pを子要素にする
-            let box1 = document.querySelector(".box");
-            box1.appendChild(p)
-            // addボタンクリック時、textitemに入力した文字を空にする
-            textitem.value = "";
-            // addボタンクリック時、Deleteボタンを表示
-            // Deleteボタン追加
-            let dltbtn = document.createElement("i");
-            console.log(dltbtn);
-            dltbtn.classList.add("dlt");
-            dltbtn.classList.add("fa-solid");
-            dltbtn.classList.add("fa-trash");
+    // // ➂関数を作る（関数にしただけで問題なく動くか確認）←　どの番号からどの番号までが同じ処理になるの？4番から15番まで
+    function createTask(item) {
+        // 5 <p>を作成
+        let p = document.createElement("p");
+        // 6 textContentに代入
+        p.textContent = textitem.value;
+        // 7 親要素boxを取得後、pを子要素にする
+        let box1 = document.querySelector(".box");
+        box1.appendChild(p)
+        // addボタンクリック時、textitemに入力した文字を空にする
+        textitem.value = "";
+        // addボタンクリック時、Deleteボタンを表示
+        // Deleteボタン追加
+        let dltbtn = document.createElement("i");
+        console.log(dltbtn);
+        dltbtn.classList.add("dlt");
+        dltbtn.classList.add("fa-solid");
+        dltbtn.classList.add("fa-trash");
+        p.appendChild(dltbtn)
+        console.log(p);
+        // addボタンクリック時、リンク先を表示
+        let newlink = document.createElement("a");
+        // console.log(newlink);
+        newlink.classList.add("link");
+        newlink.textContent = "more";
+        newlink.href = "index2.html"
+        let parent = document.querySelector(".box:first-child");
+        // console.log(parent);
+        // console.log(newlink);
+        parent.appendChild(newlink);
+        // console.log(newlink);
+        // // 8 .dltbtn要素取得
+        // // 9 ｐを親要素とし、dltbtnを子要素にする
+        // 10 dltbtnクリック時の処理実行
+        dltbtn.addEventListener("click", function () {
+            dltbtn.parentElement.remove()
+            newlink.remove()
 
-            p.appendChild(dltbtn)
-            console.log(p);
+        })
+    }
 
-            // addボタンクリック時、リンク先を表示
-            let newlink = document.createElement("a");
-            console.log(newlink);
-            newlink.classList.add("link");
-            newlink.textContent = "more";
-            newlink.href = "index2.html"
-            let parent = document.querySelector(".box:first-child");
-            console.log(parent);
-            console.log(newlink);
-            parent.appendChild(newlink);
-            // console.log(newlink);
-            // // 8 .dltbtn要素取得
-            // // 9 ｐを親要素とし、dltbtnを子要素にする
-            // 10 dltbtnクリック時の処理実行
-            dltbtn.addEventListener("click", function () {
-                dltbtn.parentElement.remove()
-                newlink.remove()
-            })
-
-        }
-    })
-// }
-
-
+})
